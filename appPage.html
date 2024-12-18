@@ -1,0 +1,147 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <center>
+      <h4> My Projects </h4>
+      <br>
+      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/rUB0x88zllBnYusNAyZC2CXl-l3VnZt325PfAqeGEO2/embed?nosource"></iframe>
+   <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/hn09Pu-UYABjX1KZ7QB_6X2fbIqD2eXY9VQGHqTQLLx/embed?nosource"></iframe> 
+      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/c1ReAWBFyo7wNTcvFhboMfUKk6yAALyE4D4An643hmH/embed?nosource"></iframe>
+      
+      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Nav Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #f39c12;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .menu-button {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-button div {
+            background-color: white;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Trevor's Website</div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="appPage.html">Projects</a>
+            
+         
+            
+        </div>
+        <div class="menu-button" id="menuButton">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const navLinks = document.getElementById('navLinks');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  
+ 
+
+</body>
+</html>
+
+
+      <style>
+body{
+  background-color:#aaaaaa;
+}
+
+h4{
+  color:white;
+  font-size:170%;
+  font-family: Arial, sans-serif;
+  
+   
+}
+
+h4:hover{
+  
+  color:#f39c12;
+}
+img{
+  width: 15%;
+    border-radius: 40%;
+  
+}
+img:hover{
+  border:#FBB13C dotted 10px
+}
+        
+      </style>
