@@ -5,28 +5,33 @@
   <body>
     <center>
       <h4> Trevor Roland's Website </h4>
-    <img src="https://tse1.mm.bing.net/th?q=lebron%20james%20kindergarten%20photo&w=250&h=250&c=7">
+    <img src="https://i1.sndcdn.com/artworks-o1mkYqxnkKizzY8K-gDrYnQ-t500x500.jpg">
+    
   </body>
-  
+ 
   
 </html>
 
+
+
+
+
 <style>
 body{
-  background-color:#AEE5D8;
+  background-color:#aaaaaa;
 }
 
 h4{
-  color:#4C5B5C;
+  color:white;
   font-size:170%;
-  font-family: "Lucida Console", "Courier New", monospace;
-  text-decoration-line: underline;
-  letter-spacing: 4px; 
+  font-family: Arial, sans-serif;
+  
+   
 }
 
 h4:hover{
-  text-shadow: 3px 3px 15px;
-  color:#FBB13C;
+  
+  color:#f39c12;
 }
 img{
   width: 15%;
@@ -39,3 +44,112 @@ img:hover{
 
   
 </style>
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Nav Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #f39c12;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .menu-button {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-button div {
+            background-color: white;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Trevor's Website</div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="appPage.html">Projects</a>
+            
+         
+            
+        </div>
+        <div class="menu-button" id="menuButton">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const navLinks = document.getElementById('navLinks');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  
+ 
+
+</body>
+</html>
