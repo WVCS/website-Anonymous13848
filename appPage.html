@@ -8,38 +8,47 @@
       <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/rUB0x88zllBnYusNAyZC2CXl-l3VnZt325PfAqeGEO2/embed?nosource"></iframe>
    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/hn09Pu-UYABjX1KZ7QB_6X2fbIqD2eXY9VQGHqTQLLx/embed?nosource"></iframe> 
       <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/c1ReAWBFyo7wNTcvFhboMfUKk6yAALyE4D4An643hmH/embed?nosource"></iframe>
+      </body>
+</html>
       
-      
-      <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylish Nav Bar</title>
     <style>
-        body {
+        /* General styling and reset */
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
         }
 
-       .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 1rem 2rem;
-    position: fixed; /* Fix the navbar position */
-    bottom: 0; /* Align it at the bottom of the screen */
-    width: 100%; /* Make it span the entire width */
-    z-index: 1000; /* Ensure it appears above other elements */
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+            position: fixed; /* Fix the navbar position */
+            bottom: 0; /* Align it at the bottom of the screen */
+            width: 100%; /* Make it span the entire width */
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
 
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px; /* Reduced margin to prevent overflow */
             font-size: 1rem;
             transition: color 0.3s;
+            white-space: nowrap; /* Prevent text wrapping */
         }
 
         .navbar a:hover {
@@ -54,6 +63,8 @@
 
         .nav-links {
             display: flex;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            justify-content: center; /* Keep links aligned */
         }
 
         .menu-button {
@@ -71,21 +82,23 @@
 
         @media (max-width: 768px) {
             .nav-links {
-                display: none;
+                display: none; /* Hidden by default on small screens */
                 flex-direction: column;
+                align-items: center;
                 width: 100%;
                 background-color: #333;
                 position: absolute;
-                top: 60px;
+                bottom: 60px; /* Position it above the navbar */
                 left: 0;
+                padding: 1rem 0;
             }
 
             .nav-links.active {
-                display: flex;
+                display: flex; /* Show links when active */
             }
 
             .menu-button {
-                display: flex;
+                display: flex; /* Show menu button on small screens */
             }
         }
     </style>
@@ -96,9 +109,6 @@
         <div class="nav-links" id="navLinks">
             <a href="index.html">Home</a>
             <a href="appPage.html">Projects</a>
-            
-         
-            
         </div>
         <div class="menu-button" id="menuButton">
             <div></div>
@@ -115,11 +125,12 @@
             navLinks.classList.toggle('active');
         });
     </script>
+</body>
+</html>
   
  
 
-</body>
-</html>
+
 
 
       <style>
